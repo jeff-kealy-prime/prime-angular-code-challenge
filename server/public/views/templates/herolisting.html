@@ -1,0 +1,21 @@
+<h1>List of Heroes</h1>
+<div id="heroes">
+  <table class="table table-hover table-inverse">
+    <tr>
+      <th>Persona</th>
+      <th>Alias</th>
+      <th>Super power</th>
+      <th>Description</th>
+    </tr>
+  <tr ng-repeat="heroes in hlc.heroArray">
+    <td>{{heroes.persona}}</td>
+    <td>{{heroes.alias}}</td>
+    <td>{{heroes.name}}</td>
+    <td>{{heroes.description}}</td>
+    <td><button class="btn btn-danger" type="button" ng-click="hlc.deleteHero(heroes)">Delete</button></td>
+
+    <!-- <td class={{person.checkbox}}><input type="checkbox" ng-model= "person.active" ng-change="employeeController.activity(person)"
+      name="activeCheckbox"  > {{person.checkbox}}</td> -->
+  </tr>
+  </table>
+</div>
